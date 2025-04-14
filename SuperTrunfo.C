@@ -1,21 +1,17 @@
 #include <stdio.h>
 
-    int main(){            
+    int main() { 
        
      // *Olá, Meu nome é Gabriel Fernando e estas são minhas primeiras linhas de código em "C", programando o jogo Desafio De Cartas Super Trunfo Estados!\*
-      
-       
-
+     
      // Desafio de Cartas Super Trunfo Estados! - Novato;
-
-
 
      // Declarando Variáveis para as cartas.
     
         char Estado1, Estado2;                                             /*Usamos "char" para aramazenar caracteres/letras/strings. */
-        char Código1, Código2;                                             /*USamos "char" para armazenar os códigos das cartas.*/
+        char Codigo1, Codigo2;                                             /*USamos "char" para armazenar os códigos das cartas.*/
         char Nome1[20], Nome2[20];                                         /*Usamos "char" para armazenar os nomes das cartas.*/
-        int População1, População2;                                        /*Usamos "int" para para armazenar um valor "inteiro".*/
+        int População1 , População2;                                        /*Usamos "int" para para armazenar um valor "inteiro".*/
         float Área1, Área2;                                                /*Usamos "float" para declarar uma variável de ponto flutuante.*/
         float PIB1,PIB2;                                                   /*Usamos "float" para declara uma variável de ponto flutuante no PIB.*/            
         int Numero_De_Pontos_Turisticos1, Numero_De_Pontos_Turisticos2;    /*Usamos "int" para armazenar um valor "inteiro".*/
@@ -30,17 +26,17 @@
         printf("Estado: escreva uma letra de A a H: \n");
         scanf("%c", &Estado1);                                             /*Usamos "scanf" para ler dados fornecidos pelo jogado e "%c" para imprimir um unico caractere.*/
 
-        printf("Código: \n");
-        scanf("%s", &Código1);                                             /*usamos "%s" para imprimir uma cadeia de caractere "strings" e "&" para obter o endereço de uma variável na memória.*/
+        printf("Codigo: \n");
+        scanf("%s", &Codigo1);                                             /*usamos "%s" para imprimir uma cadeia de caractere "strings" e "&" para obter o endereço de uma variável na memória.*/
 
         printf("Nome Da Cidade: \n");
         scanf("%s", &Nome1);
 
-        printf("Populção; \n");
+        printf("População; \n");
         scanf("%d", &População1);                                          /*Usamos "%d para imprimir um inteiro no formato decimal".*/
 
         printf("Área: \n");
-        scanf("%d", &Área1);
+        scanf("%f", &Área1);
 
         printf("PIB \n");
         scanf("%f", &PIB1);                                                /*Usamos "%f" para imprimir um número de ponto flutuante no formato padrão.*/
@@ -59,7 +55,7 @@
         scanf("%c", &Estado2);                                             /*Usamos "scanf" para ler dados fornecidos pelo jogado e "%c" para imprimir um unico caractere.*/
 
         printf("Código: \n");
-        scanf("%d", &Código2);                                             /*usamos "%s" para imprimir uma cadeia de caractere "strings" e "&" para obter o endereço de uma variável na memória.*/
+        scanf("%s", &Codigo2);                                             /*usamos "%s" para imprimir uma cadeia de caractere "strings" e "&" para obter o endereço de uma variável na memória.*/
 
         printf("Nome Da Cidade: \n");
         scanf("%s", &Nome2);                                         
@@ -68,7 +64,7 @@
         scanf("%d", &População2);                                          /*Usamos "%d para imprimir um inteiro no formato decimal".*/
 
         printf("Área: \n");
-        scanf("%d", &Área2);
+        scanf("%f", &Área2);
 
         printf("PIB \n");
         scanf("%f", &PIB2);                                                /*Usamos "%f" para imprimir um número de ponto flutuante no formato padrão.*/
