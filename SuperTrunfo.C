@@ -1,79 +1,126 @@
 #include <stdio.h>
 
-    int main() { 
-       
-     // *Olá, Meu nome é Gabriel Fernando e estas são minhas primeiras linhas de código em "C", programando o jogo Desafio De Cartas Super Trunfo Estados!\*
-     
-     // Desafio de Cartas Super Trunfo Estados! - Novato;
+int main() {
+// Olá, Meu nome é Gabriel Fernando e estas são minhas primeiras linhas de código em "C",
 
-     // Declarando Variáveis para as cartas.
-    
-        char Estado1, Estado2;                                             /*Usamos "char" para aramazenar caracteres/letras/strings. */
-        char Codigo1, Codigo2;                                             /*USamos "char" para armazenar os códigos das cartas.*/
-        char Nome1[20], Nome2[20];                                         /*Usamos "char" para armazenar os nomes das cartas.*/
-        int População1 , População2;                                        /*Usamos "int" para para armazenar um valor "inteiro".*/
-        float Área1, Área2;                                                /*Usamos "float" para declarar uma variável de ponto flutuante.*/
-        float PIB1,PIB2;                                                   /*Usamos "float" para declara uma variável de ponto flutuante no PIB.*/            
-        int Numero_De_Pontos_Turisticos1, Numero_De_Pontos_Turisticos2;    /*Usamos "int" para armazenar um valor "inteiro".*/
+// programando o jogo Desafio De Cartas Super Trunfo Estados!
 
-       
-     // Cadastro Das Cartas.
-     
-     // CARTA 01:
+// Desafio de Cartas Super Trunfo Estados!
 
-        printf("Carta 1 \n");                                              /*Usamos "printf" para imprimir informações na tela e "\n" para saltar linha.*/
-       
-        printf("Estado: escreva uma letra de A a H: \n");
-        scanf("%c", &Estado1);                                             /*Usamos "scanf" para ler dados fornecidos pelo jogado e "%c" para imprimir um unico caractere.*/
+// Declarando Variáveis para as cartas.
 
-        printf("Codigo: \n");
-        scanf("%s", &Codigo1);                                             /*usamos "%s" para imprimir uma cadeia de caractere "strings" e "&" para obter o endereço de uma variável na memória.*/
+char Estado1[20], Estado2[20]; 
+char Código1[20], Código2[20]; 
+char Nome1[20], Nome2[20]; 
+int População1, População2; 
+float Área1, Área2;
+float PIB1, PIB2;
+int Numero_De_Pontos_Turisticos1, Numero_De_Pontos_Turisticos2; 
+float Densidade_Populacional1, Densidade_Populacional2;
+float PIB_per_capita1, PIB_per_capita2;
 
-        printf("Nome Da Cidade: \n");
-        scanf("%s", &Nome1);
+// Cadastro Das Cartas.
 
-        printf("População; \n");
-        scanf("%d", &População1);                                          /*Usamos "%d para imprimir um inteiro no formato decimal".*/
+// CARTA 01:
 
-        printf("Área: \n");
-        scanf("%f", &Área1);
+printf("Carta 1: \n"); 
 
-        printf("PIB \n");
-        scanf("%f", &PIB1);                                                /*Usamos "%f" para imprimir um número de ponto flutuante no formato padrão.*/
+printf("Estado:\n");
+scanf("%s", Estado1);
 
-        printf("Numero de Pontos Turisticos: \n");
-        scanf("%d", &Numero_De_Pontos_Turisticos1);
+printf("Código:\n");
+scanf("%s", Código1); 
+printf("Nome Da Cidade:\n");
+scanf("%s", Nome1);
 
-        printf("Estado: %c \n , Código; %s \n , População: %d \n , Área1: %f \n , PIB: %f \n , Numero Dos Pontos Turisticos: %d \n , Estado1, Código1, Nome1, População1, Área1, PIB1, NumeroDePontosTuristicos1,");  /*Usamos "printf" no final para exibir todas as informações que estão na "CARTA01" coletadas pelo usuário e exibido na tela do computador.*/
+printf("População:\n");
+scanf("%d", &População1); 
+
+printf("Área:\n");
+scanf("%f", &Área1);
+
+printf("PIB:\n");
+scanf("%f", &PIB1); 
+
+printf("Numero de Pontos Turísticos: \n");
+scanf("%d", &Numero_De_Pontos_Turisticos1);
+
+printf("Densidade Populacional: \n");
+scanf("%f", &Densidade_Populacional1);
+
+printf("PIB per capita: \n");
+scanf("%f", &PIB_per_capita1);
 
 
-     // CARTA 02:
+// Cálculos para Carta 1:
 
-        printf("Carta 2 \n");                                              /*Usamos "printf" para imprimir informações na tela e "\n" para saltar linha.*/
-        
-        printf("Estado: escreva uma letra de A a H: \n");
-        scanf("%c", &Estado2);                                             /*Usamos "scanf" para ler dados fornecidos pelo jogado e "%c" para imprimir um unico caractere.*/
+PIB_per_capita1 = PIB1 / População1;
+Densidade_Populacional1 = População1 / Área1;
 
-        printf("Código: \n");
-        scanf("%s", &Codigo2);                                             /*usamos "%s" para imprimir uma cadeia de caractere "strings" e "&" para obter o endereço de uma variável na memória.*/
 
-        printf("Nome Da Cidade: \n");
-        scanf("%s", &Nome2);                                         
+// Exibindo dados da Carta 1:
 
-        printf("Populção; \n");
-        scanf("%d", &População2);                                          /*Usamos "%d para imprimir um inteiro no formato decimal".*/
+printf("Carta 1:\n");
+printf("Estado: %s\n", Estado1);
+printf("Código: %s\n", Código1);
+printf("Nome Da Cidade: %s\n", Nome1);
+printf("População: %d\n", População1);
+printf("Área: %.2f\n", Área1);
+printf("PIB: %.2f\n", PIB1);
+printf("Numero De Pontos Turísticos: %d\n", Numero_De_Pontos_Turisticos1);
+printf("Densidade Populacional: %.2f\n", Densidade_Populacional1);
+printf("PIB per capita: %f\n", PIB_per_capita1);
 
-        printf("Área: \n");
-        scanf("%f", &Área2);
 
-        printf("PIB \n");
-        scanf("%f", &PIB2);                                                /*Usamos "%f" para imprimir um número de ponto flutuante no formato padrão.*/
+// CARTA 02:
 
-        printf("Numero de Pontos Turisticos: \n");
-        scanf("%d", &Numero_De_Pontos_Turisticos2);
+printf("Carta 2: \n"); 
+printf("Estado:\n");
+scanf("%s", Estado2); 
 
-        printf("Estado: %c \n, Código: %s \n, Nome Da Cidade: %c \n, População: %d \n, Área: %f \n, PIB: %f \n. Numero De Pontos Turisticos: %d \n, Estado2, Código2, Nome2, População2, Área2, PIB2, NumeroDePontosTuristicos2");   /*Usamos "printf" no final para exibir todas as informações que estão na "CARTA02" coletadas pelo usuário e exibido na tela do computador.*/
+printf("Código:\n");
+scanf("%s", Código2); 
 
-        return 0;                                                          /*Usamos "return 0" para dizer que finalizamos nossa linha código.*/
+printf("Nome Da Cidade: \n");
+scanf("%s", Nome2);
 
-    }                                                                      /*Usamos a chave "}" para dizer que encerramos o programa."*/
+printf("População: \n");
+scanf("%d", &População2);
+
+printf("Área: \n");
+scanf("%f", &Área2);
+
+printf("PIB: \n");
+scanf("%f", &PIB2);
+
+printf("Numero de Pontos Turísticos: \n");
+scanf("%d", &Numero_De_Pontos_Turisticos2);
+
+printf("Densidade Populacional: \n");
+scanf("%f", &Densidade_Populacional2);
+
+printf("PIB per capita: \n");
+scanf("%f", &PIB_per_capita2);
+
+
+// Cálculos para Carta 2:
+
+PIB_per_capita2 = PIB2 / População2;
+Densidade_Populacional2 = População2 / Área2;
+
+
+// Exibindo dados da Carta 2:
+
+printf("Carta 2: \n");
+printf("Estado: %s\n", Estado2);
+printf("Código: %s\n", Código2);
+printf("Nome Da Cidade: %s\n", Nome2);
+printf("População: %d\n", População2);
+printf("Área: %.2f\n", Área2);
+printf("PIB: %.2f\n", PIB2);
+printf("Numero De Pontos Turísticos: %d\n", Numero_De_Pontos_Turisticos2);
+printf("Densidade Populacional: %.2f\n", Densidade_Populacional2);
+printf("PIB per capita: %f\n", PIB_per_capita2);
+
+return 0; 
+}
